@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.formcontainer{
+    margin: 10px 0px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 5px 5px 5px 5px rgb(10, 10, 10);
+}
+
+input{
+    width: 500px !important;
+    margin: 4px 0px;
+    border:none !important;
+    border-bottom: 2px solid white !important;
+    color: white !important;
+    height: 50px;
+    font-size: 25px !important;
+}
+.forgotpassword{
+    font-size: 20px;
+    text-decoration: none;
+}
+.forgotpassword:hover{
+    text-decoration: underline;
+}
+#signupalert{
+    display: none;
+}
+#otpfield{
+    display: none;
+}
+#otpsubmit{
+    display: none;
+}

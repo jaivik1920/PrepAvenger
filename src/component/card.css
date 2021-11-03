@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    background-color: black !important;
+    margin: 25px 15px ;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
