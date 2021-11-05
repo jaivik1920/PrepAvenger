@@ -70,6 +70,7 @@ function Editor(props) {
                     ...backendoutput,
                     "actualoutputString":success.data.output
                 })
+                console.log(actualoutput);
             }, (error) => {
                 console.log(error);
             }

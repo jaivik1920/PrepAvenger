@@ -14,7 +14,6 @@ import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
 import DoneOutlineOutlinedIcon from '@mui/icons-material/DoneOutlineOutlined';
 import CloseTwoToneIcon from '@mui/icons-material/CloseTwoTone';
 import { useHistory } from 'react-router-dom';
-import { SettingsInputAntennaTwoTone } from '@mui/icons-material';
 
 function CEditor(props) {
     const [code, setCode] = useState("");
