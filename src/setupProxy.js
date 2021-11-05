@@ -3,7 +3,7 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 module.exports = function (app) {
   app.use(
     createProxyMiddleware('/getstringproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -12,7 +12,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/getarrayproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -21,7 +21,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/getstackqueueproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -30,7 +30,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/getgraphproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -40,7 +40,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/getdpproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -49,7 +49,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/getgreedyproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -59,7 +59,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/getarrayproblems/{problemid}', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -68,7 +68,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/verifyuser', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -78,7 +78,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/adduser', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -89,7 +89,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/loginuser', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -111,7 +111,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/sendotp', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -121,7 +121,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/resetpass', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -131,7 +131,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/addstringproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -141,7 +141,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/addarrayproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -150,7 +150,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/addstackqueueproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -159,7 +159,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/addgraphproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -169,7 +169,7 @@ module.exports = function (app) {
   
   app.use(
     createProxyMiddleware('/adddpproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -178,7 +178,7 @@ module.exports = function (app) {
   );
   app.use(
     createProxyMiddleware('/addgreedyproblems', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
@@ -188,7 +188,7 @@ module.exports = function (app) {
 
   app.use(
     createProxyMiddleware('/testcasecheck', {
-      target: 'http://localhost:8585', // API endpoint 1
+      target: 'https://prepavenger-backend.herokuapp.com', // API endpoint 1
       changeOrigin: true,
       headers: {
         Connection: "keep-alive"
