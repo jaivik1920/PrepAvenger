@@ -1,0 +1,11 @@
+{
+    "root": "build/",
+    "routes": {
+        "/**": "index.html"
+    },
+    "proxies": {
+        "/loginuser/": {
+            "origin":"https://prepavenger-backend.herokuapp.com/api"
+        }
+    }
+}
