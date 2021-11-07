@@ -23,7 +23,7 @@ function Login() {
             history.push("/admin");
         }
         else{
-        axios.post(`/loginuser`,userdata).then(
+        axios.post(`https://prepavenger-backend.herokuapp.com/loginuser`,userdata).then(
             (success)=>{
                 localStorage.setItem("userName",success.data.userName);
                 console.log(success.data);
