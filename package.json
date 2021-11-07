@@ -3,6 +3,7 @@
   "homepage": "https://prepavenger.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
+  "proxy":"https://codexweb.netlify.app/.netlify/functions",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
