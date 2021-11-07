@@ -22,7 +22,7 @@ function GreedyProblem() {
 
     const getArrayProblems = () => {
         if (localStorage.getItem("userName")) {
-            axios.get(`/getgreedyproblems`).then(
+            axios.get(`https://prepavenger-backend.herokuapp.com/getgreedyproblems`).then(
                 (success) => {
                     setobj(success.data);
                     setloading(true);

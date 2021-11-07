@@ -1,3 +1,3 @@
-const server_url="http://localhost:8585";
+const server_url="https://prepavenger-backend.herokuapp.com";
 
 export default server_url;

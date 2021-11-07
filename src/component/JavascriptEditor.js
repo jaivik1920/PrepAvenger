@@ -48,7 +48,7 @@ function JavascriptEditor(props) {
 
     const getProblemsById=()=>{
         console.log(problemtype+"/"+id)
-        axios.get(`/${problemtype}/${id}`).then(
+        axios.get(`https://prepavenger-backend.herokuapp.com/${problemtype}/${id}`).then(
             (success) => {
                 console.log(success.data);
                 // document.getElementById("problemtitle").innerHTML=success.data.title;
@@ -128,7 +128,7 @@ function JavascriptEditor(props) {
             "input": inputdata
         })
         console.log(codedata);
-        axios.post("/enforceCode", codedata).then(
+        axios.post("https://codexweb.netlify.app/.netlify/functions/enforceCode", codedata).then(
             (success) => {
                 console.log(success.data.output);
                 // document.getElementById("output").innerHTML = success.data.output;
@@ -149,7 +149,7 @@ function JavascriptEditor(props) {
         setloading(false);
         document.getElementById("testcaseright").style.display="none";
         document.getElementById("testcasewrong").style.display="none";
-        axios.post("/testcasecheck",backendoutput).then(
+        axios.post("https://prepavenger-backend.herokuapp.com/testcasecheck",backendoutput).then(
             (success)=>{
                 if(success.data==0){
                 document.getElementById("testcaseright").style.display="block";

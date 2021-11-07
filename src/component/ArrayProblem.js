@@ -22,7 +22,7 @@ function ArrayProblem() {
 
     const getArrayProblems = () => {
         if (localStorage.getItem("userName")) {
-            axios.get(`/getarrayproblems`).then(
+            axios.get(`https://prepavenger-backend.herokuapp.com/getarrayproblems`).then(
                 (success) => {
                     setobj(success.data);
                     setloading(true);

@@ -22,7 +22,7 @@ function StackQProblem() {
 
     const getArrayProblems = () => {
         if (localStorage.getItem("userName")) {
-            axios.get(`/getstackqueueproblems`).then(
+            axios.get(`https://prepavenger-backend.herokuapp.com/getstackqueueproblems`).then(
                 (success) => {
                     setobj(success.data);
                     setloading(true);

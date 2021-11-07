@@ -20,7 +20,7 @@ function Signup() {
     const [backendotp, setbackendotp] = useState("");
     const SubmitEvent = (e) => {
         console.log(userdata);
-        axios.post(`/verifyuser`, userdata).then(
+        axios.post(`https://prepavenger-backend.herokuapp.com/verifyuser`, userdata).then(
             (success) => {
                 document.getElementById("signupalert").style.display = "block"; 
                 document.getElementById("signupalert").classList.add("alert-success"); 
@@ -50,7 +50,7 @@ function Signup() {
         console.log(fieldotp);
         if(backendotp==fieldotp){
             console.log("ok");
-        axios.post(`/adduser`, userdata).then(
+        axios.post(`https://prepavenger-backend.herokuapp.com/adduser`, userdata).then(
             (success) => {
                 document.getElementById("signupalert").style.display = "block"; 
                 document.getElementById("signupalert").classList.add("alert-success"); 

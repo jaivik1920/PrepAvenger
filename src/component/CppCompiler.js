@@ -90,7 +90,7 @@ function CppCompiler() {
             "input": inputdata
         })
         console.log(codedata);
-        axios.post("/enforceCode", codedata).then(
+        axios.post("https://codexweb.netlify.app/.netlify/functions/enforceCode", codedata).then(
             (success) => {
                 console.log(success.data.output);
                 document.getElementById("output").innerHTML=success.data.output;

@@ -29,7 +29,7 @@ function AddProblems() {
         setloading(false);
         if(probtype==="array"){ 
             
-            axios.post(`/addarrayproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/addarrayproblems`, probdata).then(
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 
                     document.getElementById("signupalert").classList.add("alert-success"); 
@@ -52,7 +52,7 @@ function AddProblems() {
         else if(probtype==="string"){
             setloading(false);
 
-            axios.post(`/addstringproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/addstringproblems`, probdata).then(
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 
                     document.getElementById("signupalert").classList.add("alert-success"); 
@@ -76,7 +76,7 @@ function AddProblems() {
         else if(probtype==="stackq"){
             setloading(false);
 
-            axios.post(`/addstackqueueproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/addstackqueueproblems`, probdata).then(
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 
                     document.getElementById("signupalert").classList.add("alert-success"); 
@@ -100,7 +100,7 @@ function AddProblems() {
         else if(probtype==="greedy"){
             setloading(false);
 
-            axios.post(`/addgreedyproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/addgreedyproblems`, probdata).then(
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 
                     document.getElementById("signupalert").classList.add("alert-success"); 
@@ -126,7 +126,7 @@ function AddProblems() {
             setloading(false);
 
 
-            axios.post(`/addgraphproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/addgraphproblems`, probdata).then(
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 
                     document.getElementById("signupalert").classList.add("alert-success"); 
@@ -149,7 +149,7 @@ function AddProblems() {
         else{
             setloading(false);
 
-            axios.post(`/adddpproblems`, probdata).then(
+            axios.post(`https://prepavenger-backend.herokuapp.com/adddpproblems`, probdata).then(
                 
                 (success) => {
                     document.getElementById("signupalert").style.display = "block"; 

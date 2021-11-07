@@ -27,7 +27,7 @@ function ResetPassword() {
         if(document.getElementById("cpassword").value==data.userPassword){
            
             setloading(false);
-        axios.post(`/resetpass`,data).then(
+        axios.post(`https://prepavenger-backend.herokuapp.com/resetpass`,data).then(
             (success)=>{            
                 console.log(success);
                 history.push("/login");

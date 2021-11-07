@@ -16,11 +16,15 @@ function Login() {
         document.title = "Login || PrepAvenger";
     }, []);
 
+    const [loading, setloading] = useState(true);
+
     const submitEvent=(e)=>{
+        setloading(false);
         console.log(userdata);
         if(userdata.userEmail==="admin@gmail.com" && userdata.userPassword==="admin"){
             localStorage.setItem("userName","Admin");
             history.push("/admin");
+            setloading(true);
         }
         else{
         axios.post(`https://prepavenger-backend.herokuapp.com/loginuser`,userdata).then(
@@ -28,6 +32,7 @@ function Login() {
                 localStorage.setItem("userName",success.data.userName);
                 console.log(success.data);
                 history.push("/home");
+                setloading(true);
             },
             (error)=>{  
 
@@ -35,6 +40,7 @@ function Login() {
                 document.getElementById("signupalert").classList.add("alert-danger"); 
                 document.getElementById("errsuc").innerHTML="Error!!!";
                 document.getElementById("desc").innerHTML="Oops something went wrong! Please enter your correct password!";
+                setloading(true);
             }
         );
         }   
@@ -58,6 +64,14 @@ function Login() {
                     <strong id="errsuc"></strong> <span id="desc">  </span>
                     <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+                {
+                        loading?
+                        <div style={{"display":"none"}}></div>
+                        :
+                        <div class="spinner-grow text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                }
                 <div className="formcontainer">
                     <div className="d-flex justify-content-around w-100 ">
                         <NavLink style={{'width':'100vw' ,'textDecoration':'none'}} to="/signup">

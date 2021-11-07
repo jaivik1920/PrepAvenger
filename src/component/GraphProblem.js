@@ -22,7 +22,7 @@ function GraphProblem() {
 
     const getArrayProblems = () => {
         if (localStorage.getItem("userName")) {
-            axios.get(`/getgraphproblems`).then(
+            axios.get(`https://prepavenger-backend.herokuapp.com/getgraphproblems`).then(
                 (success) => {
                     setobj(success.data);
                     setloading(true);

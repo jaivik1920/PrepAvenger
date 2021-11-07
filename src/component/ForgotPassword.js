@@ -26,7 +26,7 @@ function ForgotPassword() {
         setloading(false);
         console.log(email);
 
-        axios.post(`/sendotp`, email).then(
+        axios.post(`https://prepavenger-backend.herokuapp.com/sendotp`, email).then(
             (success) => {
 
                 console.log(success);

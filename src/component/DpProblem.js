@@ -23,7 +23,7 @@ function DpProblem() {
 
     const getArrayProblems = () => {
         if (localStorage.getItem("userName")) {
-            axios.get(`/getdpproblems`).then(
+            axios.get(`https://prepavenger-backend.herokuapp.com/getdpproblems`).then(
                 (success) => {
                     setobj(success.data);
                     setloading(true);
